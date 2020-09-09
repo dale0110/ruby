@@ -15,7 +15,9 @@ def traverse_dir(file_path)
 end
 
 
+puts  Time.now
 Find.find('D:\odl-controller') do |path|
+
     if path.include? ".java"
         if path.length > 200
             puts path
@@ -23,3 +25,4 @@ Find.find('D:\odl-controller') do |path|
         end
     end
 end
+puts Time.now
